@@ -1,0 +1,37 @@
+{
+  "name": "backend-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.15.0",
+    "@strapi/plugin-users-permissions": "5.15.0",
+    "@strapi/strapi": "5.15.0",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi": "^3.6.11",
+    "stripe": "^18.2.1",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "4ef10b79-181a-4b85-a44f-147724f7396f",
+    "installId": "9925195e6ac662919cef40360528bc7b59ed8e8771bfe7863a6de214fcaf9fec"
+  }
+}
