@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = ({ env }) => {
-  const client = env('DATABASE_CLIENT', 'postgres');
+  const client = env('DATABASE_CLIENT', 'sqlite');
 
   const connections = {
     mysql: {
@@ -36,7 +36,6 @@ module.exports = ({ env }) => {
       },
       pool: { min: 2, max: 10 },
     },
-
     sqlite: {
       connection: {
         filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
