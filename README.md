@@ -42,6 +42,28 @@ El backend de Strapi está estructurado de la siguiente forma:
 
 ---
 
+## ⚙️ Configuración del Entorno (.env)
+
+El backend requiere configurar ciertas variables de entorno para el funcionamiento de Stripe, la seguridad y el servidor de Strapi.
+
+1. Copia el archivo de plantilla `.env.example` para crear tu configuración local:
+   ```bash
+   cp .env.example .env
+   ```
+2. Abre el archivo `.env` recién creado y completa las claves necesarias (como `STRIPE_KEY` de tu panel de desarrollo en Stripe y las claves de seguridad de Strapi).
+
+> [!IMPORTANT]
+> Nunca comitas el archivo `.env` al repositorio de Git. Este archivo ya se encuentra listado en `.gitignore` para tu protección.
+
+### ⚠️ Nota de Seguridad sobre la Base de Datos SQLite (`data.db`)
+
+Para evitar subir la base de datos de desarrollo a GitHub, `data.db` está configurado en el archivo `.gitignore`. Si Git ya rastreaba este archivo debido a un commit previo en tu repositorio, puedes desvincularlo (sin borrar tu base de datos local) ejecutando:
+```bash
+git rm --cached data.db
+```
+
+---
+
 ## 🛠️ Comandos de Desarrollo
 
 En este proyecto utilizamos **`pnpm`** como gestor de paquetes exclusivo. Asegúrate de tenerlo instalado de forma global.
