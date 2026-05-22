@@ -109,6 +109,3 @@ A continuación se muestran los módulos de Strapi configurados en este proyecto
 
 ### 📦 Administrador de Contenidos (Categorías y Productos)
 ![Gestor de Contenido](.github/assets/content-manager.png)
-
-### 🔐 Roles, Permisos y Claves API
-![Roles y Permisos de la API](.github/assets/permissions.png)
